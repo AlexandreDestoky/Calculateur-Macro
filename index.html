@@ -3,36 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//db.onlinewebfonts.com/c/f25d53d2e7fd4288ed28ccfec142ddfb?family=Chromoxome"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Calculateur Macro</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Calculatrice</h1>
+    <!-- formulaire -->
     <form action="">
       <div>
         <label for="">Age</label>
-        <input type="number" placeholder="25"/>
+        <input type="number" placeholder="ans" />
       </div>
-      <div>
-        <label for="">Poids</label>
-        <input type="number" placeholder="en kg"/>
-      </div>
-      <div>
-        <label for="">Taille</label>
-        <input type="number" placeholder="en cm"/>
-      </div>
+
       <div>
         <label for="">Sexe</label>
         <label for="">Homme</label>
-        <input type="radio" name="" id="">
+        <input type="radio" name="" id="" />
         <label for="">Femme</label>
-        <input type="radio" name="" id=""> 
+        <input type="radio" name="" id="" />
       </div>
+
+      <div>
+        <label for="">Taille</label>
+        <input type="number" placeholder="cm" />
+      </div>
+
+      <div>
+        <label for="">Poids</label>
+        <input type="number" placeholder="kg" />
+      </div>
+
       <div>
         <label for="">Niveau d'activité physique</label>
         <select name="" id="">
           <option value="ess">Sédentaire</option>
-          <option value="dkd">Modéré</option>
-          <option value="">Sportif</option>
+          <option value="">Peu Actif</option>
+          <option value="">Moyennement Actif</option>
+          <option value="">Actif</option>
+          <option value="">Très Actif</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Objectif</label>
+        <select name="" id="">
+          <option value="">Maintien du poids / Bien-être</option>
+          <option value="">Perte de poids</option>
+          <option value="">Un corps ferme et tonique</option>
+          <option value="">Développement musculaire</option>
         </select>
       </div>
     </form>

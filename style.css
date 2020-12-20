@@ -5,14 +5,20 @@
 
 body {
   background-color: beige;
-}
-
-div {
-  margin: .5em;
+  font-family: helvetica;
 }
 
 form {
   margin: auto;
   background-color: lightblue;
   width: 50%;
+}
+
+div {
+  margin: .5em;
+}
+
+
+select {
+  font-family: helvetica;
 }
