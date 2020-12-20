@@ -15,50 +15,58 @@
     <h1>Calculatrice</h1>
     <!-- formulaire -->
     <form action="">
-      <div>
-        <label for="">Age</label>
-        <input type="number" placeholder="ans" />
-      </div>
+      <div class="petit">
+        <div>
+          <label for="Age">Age</label>
+          <input type="number" placeholder="ans" id="Age" name="Age"/>
+        </div>
 
-      <div>
-        <label for="">Sexe</label>
-        <label for="">Homme</label>
-        <input type="radio" name="" id="" />
-        <label for="">Femme</label>
-        <input type="radio" name="" id="" />
-      </div>
+        <div>
+          <label>Sexe</label>
+          <label for="Homme" class="ligne">Homme</label>
+          <input type="radio" name="sexe" id="Homme" name="Homme"/>
+          <label for="Femme" class="ligne">Femme</label>
+          <input type="radio" name="sexe" id="Femme" name="Femme"/>
+        </div>
 
-      <div>
-        <label for="">Taille</label>
-        <input type="number" placeholder="cm" />
-      </div>
+        <div>
+          <label for="Taille">Taille</label>
+          <input type="number" placeholder="cm" id="Taille" name="Taille"/>
+        </div>
 
-      <div>
-        <label for="">Poids</label>
-        <input type="number" placeholder="kg" />
+        <div>
+          <label for="Poids">Poids</label>
+          <input type="number" placeholder="kg" id="Poids" name="Poids"/>
+        </div>
       </div>
+      <div class="block">
+        <div>
+          <label for="activite">Niveau d'activité physique</label>
+          <select name="activite" id="activite">
+            <option value="1">Sédentaire</option>
+            <option value="2">Peu Actif</option>
+            <option value="3">Moyennement Actif</option>
+            <option value="4">Actif</option>
+            <option value="5">Très Actif</option>
+          </select>
+        </div>
 
-      <div>
-        <label for="">Niveau d'activité physique</label>
-        <select name="" id="">
-          <option value="ess">Sédentaire</option>
-          <option value="">Peu Actif</option>
-          <option value="">Moyennement Actif</option>
-          <option value="">Actif</option>
-          <option value="">Très Actif</option>
-        </select>
+        <div>
+          <label for="objectif">Objectif</label>
+          <select name="objectif" id="objectif">
+            <option value="1">Maintien du poids / Bien-être</option>
+            <option value="2">Perte de poids</option>
+            <option value="3">Un corps ferme et tonique</option>
+            <option value="4">Développement musculaire</option>
+          </select>
+        </div>
       </div>
-
-      <div>
-        <label for="">Objectif</label>
-        <select name="" id="">
-          <option value="">Maintien du poids / Bien-être</option>
-          <option value="">Perte de poids</option>
-          <option value="">Un corps ferme et tonique</option>
-          <option value="">Développement musculaire</option>
-        </select>
+      <div class="buttons">
+        <button type="submit" class="calculer">Calculer</button>
+        <button type="button" class="effacer">Effacer</button>
       </div>
     </form>
+    
     <script src="app.js"></script>
   </body>
 </html>
